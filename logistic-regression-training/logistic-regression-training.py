@@ -10,10 +10,10 @@ def train_logistic_regression(X, y, lr=0.1, steps=10000):
     Return (w, b).
     """
     X = np.array(X)
-    y = np.array(y).reshape(-1)  # Ensure shape (n_samples,)
+    y = np.array(y).reshape(-1) 
     
     num_samples, num_features = X.shape
-    w = np.zeros(num_features)  # Start from zeros for reproducibility
+    w = np.zeros(num_features)  
     b = 0.0
 
     for step in range(steps):
